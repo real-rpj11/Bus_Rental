@@ -4,22 +4,17 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use DB;
 
-class Booking extends Model
+class Driver extends Model
 {
-    protected $table = "booking";
+    protected $table = "buses";
     protected $fillable = [
         "name",
-        "start-date",
-        "end-date",
-        "bus-type",
-        "number_of_passenger",
-        "price",
+        "driverlicense",
+        "contactnumber",
+        "salary",
         "status"
     ];
 
-
     use HasFactory;
-
 }
